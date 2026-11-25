@@ -1,10 +1,10 @@
 {
-  "name": "duma-superapp",
-  "version": "0.1.0",
+  "name": "duma-business",
+  "version": "0.2.0",
   "private": true,
-  "description": "DUMA Business Operating System",
+  "description": "DUMA Business — One platform. Every industry.",
   "scripts": {
-    "prepare:web": "mkdir -p www && cp index.html styles.css app.js manifest.webmanifest sw.js www/",
+    "prepare:web": "mkdir -p www && cp index.html app.js manifest.webmanifest sw.js icon.svg www/",
     "android:sync": "npm run prepare:web && cap sync android"
   },
   "dependencies": {
