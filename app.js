@@ -1,0 +1,11 @@
+const pageNames={overview:"Overview",employees:"Employees",payroll:"Payroll",payslips:"Payslips",attendance:"Attendance & shifts",leave:"Leave management",reports:"Reports",sars:"SARS & tax",claims:"Claims & advances",documents:"Documents",integrations:"DUMA connections",settings:"Settings"};
+const titleText={overview:"Good day. Here's your overview.",employees:"Your people, in one place.",payroll:"Payroll control centre.",payslips:"Payslips and employee statements.",attendance:"Attendance, shifts and overtime.",leave:"Leave requests and balances.",reports:"Understand your people costs.",sars:"South African tax and compliance.",claims:"Claims, advances and repayments.",documents:"Your workforce documents.",integrations:"Connect your DUMA services.",settings:"Workspace settings."};
+const toast=document.getElementById("toast");let toastTimer;
+function notify(message){toast.textContent=message;toast.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove("show"),2800)}
+function navigate(page){if(!pageNames[page])return;document.querySelectorAll(".nav-link").forEach(b=>b.classList.toggle("active",b.dataset.page===page));document.getElementById("crumb").textContent=pageNames[page];document.getElementById("pageTitle").textContent=titleText[page];document.getElementById("sidebar").classList.remove("open");if(page!=="overview")notify(pageNames[page]+" section is planned for the next build stage.");}
+document.querySelectorAll("[data-page]").forEach(button=>button.addEventListener("click",()=>navigate(button.dataset.page)));
+document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("sidebar").classList.toggle("open"));
+document.getElementById("runPayroll").addEventListener("click",()=>notify("Payroll setup comes next. No payroll has been run."));
+document.getElementById("dismissNotice").addEventListener("click",()=>document.querySelector(".notice").remove());
+const now=new Date();document.getElementById("todayLabel").textContent=now.toLocaleDateString("en-ZA",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).toUpperCase();
+if("serviceWorker" in navigator && location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
