@@ -1,7 +1,7 @@
 {
-  "name": "DUMA PAYROLL",
-  "short_name": "DUMA PAYROLL",
-  "description": "Payroll. People. Precision.",
+  "name": "DUMA Business Operating System",
+  "short_name": "DUMA",
+  "description": "One connected workspace for money, people, stock and transport.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f5f7fa",
