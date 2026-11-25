@@ -25,7 +25,8 @@ Shared workspace services will include company profiles, branches, people and ro
 - [ ] Role-based permissions and audit trail
 - [ ] Working module features and shared records
 - [ ] South African payroll rules and independently tested calculations
-- [ ] Android APK packaging and verified release
+- [x] Capacitor Android packaging configuration and GitHub Actions workflow added
+- [ ] First Android APK build verified and released
 
 ## Important
 
