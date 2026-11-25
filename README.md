@@ -1,33 +1,46 @@
-# DUMA PAYROLL
+# DUMA — Business Operating System
 
-**Payroll. People. Precision.**
+**One business. One connected workspace.**
 
-DUMA PAYROLL is a South African payroll and workforce-management product being built for businesses of every size. It is designed as a standalone product that can later connect securely to DUMA Business / DUMA Fleet.
+DUMA is being developed as a modular business super app for African businesses. The goal is to bring essential operations into one system while keeping company data private and access controlled.
 
-## Build status
+## DUMA modules
 
-- [x] Initial responsive web-app foundation
-- [x] Main payroll navigation and dashboard shell
-- [ ] Secure authentication and company workspaces
-- [ ] Employee records and role-based access
-- [ ] Payroll calculation engine with versioned South African tax rules
-- [ ] Payslip generation and employee self-service
-- [ ] Leave, attendance, overtime and timesheets
-- [ ] SARS reporting support and accountant access
-- [ ] Secure DUMA Business integration
-- [ ] Android APK packaging and release pipeline
+- **DUMA MONEY** — income, expenses, cash flow and financial records.
+- **DUMA FLEET** — vehicles, drivers, maintenance and fleet costs.
+- **DUMA PAYROLL** — employees, payroll, payslips, leave and HR.
+- **DUMA BUSINESS** — stock, sales, customers and suppliers.
+- **DUMA FREIGHT** — loads, deliveries and logistics.
+- **DUMA INTELLIGENCE** — consolidated reports and business insights.
 
-## Important safety boundary
+Shared workspace services will include company profiles, branches, people and roles, documents, notifications, audit history and settings.
 
-The current interface is a front-end preview with sample figures only. Do not enter real employee, identity, salary, tax or banking information. No production payroll calculations, SARS submissions, authentication or secure cloud storage are implemented yet. Those require a properly secured backend, tested calculations and current official SARS rules.
+## Current build status
+
+- [x] Responsive DUMA super-app command-centre shell
+- [x] Navigation for all six core modules
+- [x] Initial PWA manifest and offline shell
+- [ ] Secure authentication and isolated company workspaces
+- [ ] Shared API/backend and database
+- [ ] Role-based permissions and audit trail
+- [ ] Working module features and shared records
+- [ ] South African payroll rules and independently tested calculations
+- [ ] Android APK packaging and verified release
+
+## Important
+
+This repository currently contains a front-end foundation only. Module screens are not yet connected to a production backend. Do not enter real employee, identity, salary, tax, banking, customer or other confidential business information. No live payments, SARS submissions, continuous vehicle tracking, secure cloud backup or production authentication are implemented.
+
+Sensitive data must be handled by a secured backend with encryption, company-level data isolation, role-based access, audit logs, backups and tested recovery. Tax calculations must use verified, effective-dated South African rules. Financial transfers and regulated payment features require appropriate licensed partners and compliance.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve this folder with any static web server. The app uses plain HTML, CSS and JavaScript; no framework or paid service is required for this first stage.
+Open `index.html` in a browser, or serve this directory using a static web server. The first-stage shell uses plain HTML, CSS and JavaScript.
 
 ## Product principles
 
-- Original DUMA branding and workflows; no copying of Sage code or protected assets.
-- Mobile-first, accessible and straightforward.
-- Sensitive payroll data belongs on a secure backend, never in public source code or browser local storage.
-- Tax rules must be effective-dated, independently tested and checked against official South African sources before production use.
+- Original DUMA design and workflows; no copying of Sage or other proprietary code or branding.
+- Mobile-first, clear and practical.
+- Build real working features in stages; never label a planned feature as live.
+- One shared source of truth, with permissions enforced for every company and module.
+- Never store secrets or real customer data in this public repository.
