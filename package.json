@@ -4,7 +4,7 @@
   "private": true,
   "description": "DUMA Business — One platform. Every industry.",
   "scripts": {
-    "prepare:web": "mkdir -p www && cp index.html app.js manifest.webmanifest sw.js icon.svg assets/duma-business-logo.webp www/",
+    "prepare:web": "mkdir -p www/assets && cp index.html app.js manifest.webmanifest sw.js icon.svg www/ && cp assets/duma-business-logo.webp www/assets/",
     "android:sync": "npm run prepare:web && cap sync android"
   },
   "dependencies": {
