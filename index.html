@@ -1,82 +1,56 @@
 <!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111827">
-  <meta name="description" content="DUMA PAYROLL — Payroll. People. Precision.">
-  <title>DUMA PAYROLL</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="DUMA — one connected workspace for business, money, people and transport.">
+  <title>DUMA | Business Operating System</title>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <a class="brand" href="#" aria-label="DUMA PAYROLL home">
-        <span class="brand-mark">D</span>
-        <span><strong>DUMA</strong><small>PAYROLL</small></span>
-      </a>
-      <div class="workspace-label">WORKSPACE</div>
-      <button class="company-switch" type="button"><span class="company-dot"></span><span><strong>Your company</strong><small>Demo workspace</small></span><span class="chevron">⌄</span></button>
-      <nav class="nav" aria-label="Main navigation">
-        <button class="nav-link active" data-page="overview"><span>▦</span> Overview</button>
-        <div class="nav-heading">PEOPLE & PAY</div>
-        <button class="nav-link" data-page="employees"><span>♙</span> Employees</button>
-        <button class="nav-link" data-page="payroll"><span>R</span> Payroll</button>
-        <button class="nav-link" data-page="payslips"><span>▤</span> Payslips</button>
-        <button class="nav-link" data-page="attendance"><span>◷</span> Attendance & shifts</button>
-        <button class="nav-link" data-page="leave"><span>▣</span> Leave management</button>
-        <div class="nav-heading">BUSINESS</div>
-        <button class="nav-link" data-page="reports"><span>▥</span> Reports</button>
-        <button class="nav-link" data-page="sars"><span>✓</span> SARS & tax</button>
-        <button class="nav-link" data-page="claims"><span>＋</span> Claims & advances</button>
-        <button class="nav-link" data-page="documents"><span>▧</span> Documents</button>
-        <div class="nav-heading">ADMINISTRATION</div>
-        <button class="nav-link" data-page="integrations"><span>⇄</span> DUMA connections</button>
-        <button class="nav-link" data-page="settings"><span>⚙</span> Settings</button>
-      </nav>
-      <div class="sidebar-bottom"><div class="secure-note"><span class="secure-dot"></span><span><strong>Security first</strong><small>Production security setup pending</small></span></div><small class="version">DUMA PAYROLL · FOUNDATION</small></div>
-    </aside>
-
-    <main class="main">
-      <header class="topbar">
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
-        <div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div>
-        <div class="top-actions"><span class="preview-pill">PREVIEW MODE</span><button class="avatar" aria-label="Demo profile">D</button></div>
-      </header>
-
-      <section class="content">
-        <div class="welcome-row">
-          <div><p class="eyebrow" id="todayLabel">DUMA PAYROLL WORKSPACE</p><h1 id="pageTitle">Good day. Here's your overview.</h1><p class="subhead">A clear view of your people, payroll and business costs.</p></div>
-          <button class="primary-btn" id="runPayroll">＋ Start payroll</button>
-        </div>
-
-        <div class="notice"><span class="notice-icon">i</span><div><strong>Preview workspace</strong><p>Figures and records shown here are sample data. Do not add real employee or banking details until secure accounts and storage are enabled.</p></div><button class="notice-close" aria-label="Dismiss notice" id="dismissNotice">×</button></div>
-
-        <div class="section-head"><div><h2>Payroll snapshot</h2><p>Sample figures for the current period</p></div><span class="period-tag">NOVEMBER 2026</span></div>
-        <div class="stat-grid">
-          <article class="stat-card"><div class="stat-top"><span>Total employees</span><span class="stat-icon">♙</span></div><strong>—</strong><small>Connect your employee records</small></article>
-          <article class="stat-card"><div class="stat-top"><span>Gross payroll</span><span class="stat-icon">R</span></div><strong>—</strong><small>Calculated after payroll setup</small></article>
-          <article class="stat-card"><div class="stat-top"><span>Pending approvals</span><span class="stat-icon">◷</span></div><strong>0</strong><small>No approvals in this preview</small></article>
-          <article class="stat-card"><div class="stat-top"><span>Next pay date</span><span class="stat-icon">▣</span></div><strong>—</strong><small>Set your pay schedule</small></article>
-        </div>
-
-        <div class="dashboard-grid">
-          <section class="panel quick-panel"><div class="panel-head"><div><h2>Quick actions</h2><p>Common payroll tasks</p></div></div><div class="quick-grid">
-            <button class="quick-action" data-page="employees"><span class="quick-icon">♙</span><strong>Add employee</strong><small>Create a staff profile</small></button>
-            <button class="quick-action" data-page="payroll"><span class="quick-icon">R</span><strong>Prepare payroll</strong><small>Review a pay period</small></button>
-            <button class="quick-action" data-page="leave"><span class="quick-icon">▣</span><strong>Manage leave</strong><small>Requests and balances</small></button>
-            <button class="quick-action" data-page="reports"><span class="quick-icon">▥</span><strong>View reports</strong><small>Business payroll insights</small></button>
-          </div></section>
-          <section class="panel activity-panel"><div class="panel-head"><div><h2>Getting started</h2><p>Your setup checklist</p></div><span class="progress-label">0 of 5</span></div>
-            <div class="setup-list"><div class="setup-item"><span class="check-circle">1</span><span><strong>Set up your company</strong><small>Company details and branches</small></span><span class="setup-status">Next</span></div><div class="setup-item"><span class="check-circle">2</span><span><strong>Configure pay schedules</strong><small>Weekly, fortnightly or monthly</small></span></div><div class="setup-item"><span class="check-circle">3</span><span><strong>Add employee records</strong><small>Secure employee onboarding</small></span></div><div class="setup-item"><span class="check-circle">4</span><span><strong>Review tax settings</strong><small>Use verified current SARS rules</small></span></div><div class="setup-item"><span class="check-circle">5</span><span><strong>Run a test payroll</strong><small>Validate calculations before approval</small></span></div></div>
-          </section>
-        </div>
-        <footer>© 2026 DUMA PAYROLL <span>Built for South African business</span></footer>
-      </section>
-    </main>
-  </div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" aria-label="DUMA home"><span class="brand-mark">D</span><span><strong>DUMA</strong><small>BUSINESS OS</small></span></a>
+    <div class="workspace-label">WORKSPACE</div>
+    <button class="company-switch" type="button"><span class="company-dot"></span><span><strong>Your company</strong><small>Preview workspace</small></span><span class="chevron">⌄</span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav-link active" data-page="home"><span>▦</span> Command centre</button>
+      <div class="nav-heading">DUMA MODULES</div>
+      <button class="nav-link" data-page="money"><span>R</span> DUMA Money</button>
+      <button class="nav-link" data-page="fleet"><span>▰</span> DUMA Fleet</button>
+      <button class="nav-link" data-page="payroll"><span>♙</span> DUMA Payroll</button>
+      <button class="nav-link" data-page="business"><span>▤</span> DUMA Business</button>
+      <button class="nav-link" data-page="freight"><span>⇄</span> DUMA Freight</button>
+      <button class="nav-link" data-page="intelligence"><span>▥</span> DUMA Intelligence</button>
+      <div class="nav-heading">YOUR WORKSPACE</div>
+      <button class="nav-link" data-page="people"><span>♧</span> People & access</button>
+      <button class="nav-link" data-page="documents"><span>▧</span> Documents</button>
+      <button class="nav-link" data-page="settings"><span>⚙</span> Settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="secure-note"><span class="secure-dot"></span><span><strong>Security-first build</strong><small>Secure backend still to be added</small></span></div><small class="version">DUMA · SUPER APP FOUNDATION</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button><div class="breadcrumb">DUMA <span>/</span> <strong id="crumb">Command centre</strong></div><div class="top-actions"><span class="preview-pill">PREVIEW MODE</span><button class="avatar" aria-label="Preview profile">D</button></div></header>
+    <section class="content">
+      <div class="welcome-row"><div><p class="eyebrow" id="todayLabel">DUMA BUSINESS OPERATING SYSTEM</p><h1 id="pageTitle">One business. One connected workspace.</h1><p class="subhead" id="pageSubtitle">Manage money, people, stock and transport from one place.</p></div><button class="primary-btn" id="companySetup">＋ Set up company</button></div>
+      <div class="notice" id="previewNotice"><span class="notice-icon">i</span><div><strong>Foundation preview</strong><p>This is the first DUMA super-app shell. Modules are being built in stages. Do not enter real employee, identity, salary, tax, banking or customer information yet.</p></div><button class="notice-close" aria-label="Dismiss notice" id="dismissNotice">×</button></div>
+      <div class="section-head"><div><h2>Your DUMA services</h2><p>Choose a module to open its workspace</p></div><span class="period-tag">ONE CONNECTED SYSTEM</span></div>
+      <div class="module-grid">
+        <button class="module-card" data-page="money"><span class="module-symbol">R</span><span class="module-copy"><strong>DUMA MONEY</strong><small>Income, expenses, cash flow and financial records</small><em>Open Money →</em></span></button>
+        <button class="module-card" data-page="fleet"><span class="module-symbol">▰</span><span class="module-copy"><strong>DUMA FLEET</strong><small>Vehicles, drivers, maintenance and fleet costs</small><em>Open Fleet →</em></span></button>
+        <button class="module-card" data-page="payroll"><span class="module-symbol">♙</span><span class="module-copy"><strong>DUMA PAYROLL</strong><small>Employees, salaries, payslips, leave and HR</small><em>Open Payroll →</em></span></button>
+        <button class="module-card" data-page="business"><span class="module-symbol">▤</span><span class="module-copy"><strong>DUMA BUSINESS</strong><small>Stock, sales, customers and suppliers</small><em>Open Business →</em></span></button>
+        <button class="module-card" data-page="freight"><span class="module-symbol">⇄</span><span class="module-copy"><strong>DUMA FREIGHT</strong><small>Loads, delivery jobs and logistics operations</small><em>Open Freight →</em></span></button>
+        <button class="module-card" data-page="intelligence"><span class="module-symbol">▥</span><span class="module-copy"><strong>DUMA INTELLIGENCE</strong><small>Reports, performance and business insights</small><em>Open Intelligence →</em></span></button>
+      </div>
+      <div class="dashboard-grid">
+        <section class="panel"><div class="panel-head"><div><h2>How DUMA connects</h2><p>Shared information, with controlled access</p></div></div><div class="connection-list"><div><span class="connection-icon">01</span><span><strong>One company workspace</strong><small>Company profile, branches and teams shared across modules</small></span></div><div><span class="connection-icon">02</span><span><strong>Enter information once</strong><small>Approved records can flow between finance, fleet and payroll</small></span></div><div><span class="connection-icon">03</span><span><strong>Access stays controlled</strong><small>Staff only see the information their role permits</small></span></div></div></section>
+        <section class="panel"><div class="panel-head"><div><h2>Build roadmap</h2><p>Core foundations before live business data</p></div><span class="progress-label">PHASE 1</span></div><div class="setup-list"><div class="setup-item"><span class="check-circle">1</span><span><strong>Super-app dashboard</strong><small>Module navigation and responsive shell</small></span><span class="setup-status">Built</span></div><div class="setup-item"><span class="check-circle">2</span><span><strong>Company accounts & permissions</strong><small>Secure login and separate company data</small></span></div><div class="setup-item"><span class="check-circle">3</span><span><strong>Shared backend & records</strong><small>Connect modules without duplicate entry</small></span></div><div class="setup-item"><span class="check-circle">4</span><span><strong>Working business modules</strong><small>Build and test each service</small></span></div><div class="setup-item"><span class="check-circle">5</span><span><strong>Android app & release</strong><small>Package and verify installable APK</small></span></div></div></section>
+      </div>
+      <footer>© 2026 DUMA <span>Built for African business</span></footer>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
