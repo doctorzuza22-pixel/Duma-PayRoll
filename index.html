@@ -23,6 +23,37 @@ body[data-large-controls="true"] button,body[data-large-controls="true"] .field{
 body[data-high-contrast="true"]{--duma-muted:#263445;--duma-border:#697789}body[data-theme="dark"][data-high-contrast="true"]{--duma-muted:#fff;--duma-border:#fff}
 body{font-size:calc(14px * var(--duma-scale))}.welcome h1{font-size:calc(26px * var(--duma-scale))}.module strong,.module p,.module em,.nav button,.row strong,.row small{font-size:calc(1em * var(--duma-scale))}
 .settings-group{margin:14px 0;padding:16px;border:1px solid var(--duma-border);border-radius:9px;background:var(--duma-surface)}.settings-group h2{font-size:14px;margin:0 0 8px}.settings-group p{font-size:12px;color:var(--duma-muted);line-height:1.5}.setting-row{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--duma-border);font-size:12px}.setting-row select,.setting-row input{font:inherit;padding:9px;border:1px solid var(--duma-border);border-radius:7px;background:var(--duma-surface);color:var(--duma-text)}.setting-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Contrast corrections for every appearance theme */
+body[data-theme="dark"] .welcome h1,
+body[data-theme="dark"] .section-head h2,
+body[data-theme="dark"] .module,
+body[data-theme="dark"] .module strong,
+body[data-theme="dark"] .module em,
+body[data-theme="dark"] .card h2,
+body[data-theme="dark"] .row strong { color:var(--duma-text)!important; }
+body[data-theme="dark"] .module p,
+body[data-theme="dark"] .section-head p,
+body[data-theme="dark"] .card p,
+body[data-theme="dark"] .row small { color:var(--duma-muted)!important; }
+body[data-theme="dark"] .module,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .field,
+body[data-theme="dark"] .tag { background:var(--duma-surface); border-color:var(--duma-border); }
+body[data-theme="dark"] .tag { color:var(--duma-text); }
+body[data-theme="dark"] .field { color:var(--duma-text); }
+body[data-theme="dark"] .field::placeholder { color:#aeb9c8; opacity:1; }
+body[data-theme="dark"] .symbol,
+body[data-theme="dark"] .num { background:#2b3747; color:#f2f5f9; }
+body[data-theme="dark"] .button.secondary { background:#263447; color:#fff; border-color:#526176; }
+body[data-theme="blue"] .welcome h1,
+body[data-theme="blue"] .section-head h2,
+body[data-theme="blue"] .module,
+body[data-theme="blue"] .module strong,
+body[data-theme="blue"] .module em { color:var(--duma-text); }
+body[data-theme="blue"] .module p,
+body[data-theme="blue"] .section-head p { color:var(--duma-muted); }
+
 </style>
 </head>
 <body><div class="shell">
