@@ -54,6 +54,43 @@ body[data-theme="blue"] .module em { color:var(--duma-text); }
 body[data-theme="blue"] .module p,
 body[data-theme="blue"] .section-head p { color:var(--duma-muted); }
 
+
+/* First-run experience: welcome first, workspace only after organisation setup */
+body.first-run .side,
+body.first-run .menu,
+body.first-run .crumb,
+body.first-run .pill { display:none!important; }
+body.first-run .main { margin-left:0!important; }
+body.first-run .top { justify-content:center; height:76px; padding:10px; background:var(--duma-surface); }
+body.first-run .top-logo { width:190px; height:58px; object-fit:contain; }
+body.first-run .content { max-width:760px; padding:34px 22px; }
+body.first-run .landing-welcome { display:flex; flex-direction:column; align-items:stretch; gap:22px; margin:24px 0 22px; }
+body.first-run .landing-welcome h1 { font-size:clamp(28px,6vw,42px); line-height:1.12; color:var(--duma-text); }
+body.first-run .landing-welcome p:last-child { font-size:16px; line-height:1.65; color:var(--duma-muted); }
+body.first-run .landing-welcome .button { min-height:58px; font-size:16px; width:100%; }
+body.first-run .landing-about { padding:22px; background:var(--duma-surface); color:var(--duma-text); }
+body.first-run .landing-about h2 { font-size:19px; margin:0 0 10px; }
+body.first-run .landing-about p { color:var(--duma-muted); line-height:1.7; font-size:14px; }
+body.first-run .preview-note { border-top:1px solid var(--duma-border); padding-top:13px; font-size:12px!important; }
+.industry-pick-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.industry-pick { display:flex; align-items:flex-start; gap:11px; padding:15px; border:1px solid var(--duma-border); border-radius:9px; background:var(--duma-surface); color:var(--duma-text); cursor:pointer; }
+.industry-pick input { width:20px; height:20px; flex:none; accent-color:#172235; }
+.industry-pick strong,.industry-pick small { display:block; }
+.industry-pick strong { font-size:13px; }
+.industry-pick small { color:var(--duma-muted); font-size:11px; line-height:1.45; margin-top:5px; }
+.setup-actions { display:flex; justify-content:space-between; gap:12px; margin:20px 0; }
+.setup-actions .button { min-height:48px; }
+.setup-actions .button:disabled { opacity:.45; cursor:not-allowed; }
+.setup-form { display:grid; gap:14px; }
+.setup-form>label { display:grid; gap:7px; font-size:13px; font-weight:650; color:var(--duma-text); }
+.setup-form .field { width:100%; min-height:46px; color:var(--duma-text); background:var(--duma-surface); }
+.selected-industries { padding:14px; background:var(--duma-surface); border:1px solid var(--duma-border); border-radius:8px; color:var(--duma-text); }
+.selected-industries p { color:var(--duma-muted); margin-bottom:0; }
+@media(max-width:600px){.industry-pick-grid{grid-template-columns:1fr}.setup-actions{flex-direction:column-reverse}.setup-actions .button{width:100%}body.first-run .content{padding:25px 16px}}
+body[data-theme="dark"] .industry-pick,body[data-theme="dark"] .setup-form .field,body[data-theme="dark"] .selected-industries {background:var(--duma-surface);color:var(--duma-text);border-color:var(--duma-border)}
+body[data-theme="dark"] .setup-form>label {color:var(--duma-text)}
+body[data-theme="dark"] .setup-form .field::placeholder {color:#aeb9c8;opacity:1}
+
 </style>
 </head>
 <body><div class="shell">
