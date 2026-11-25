@@ -1,0 +1,6 @@
+{
+  "appId": "com.duma.superapp",
+  "appName": "DUMA",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
