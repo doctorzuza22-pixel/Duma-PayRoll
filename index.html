@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="DUMA PAYROLL — Payroll. People. Precision.">
+  <title>DUMA PAYROLL</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="DUMA PAYROLL home">
+        <span class="brand-mark">D</span>
+        <span><strong>DUMA</strong><small>PAYROLL</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <button class="company-switch" type="button"><span class="company-dot"></span><span><strong>Your company</strong><small>Demo workspace</small></span><span class="chevron">⌄</span></button>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="overview"><span>▦</span> Overview</button>
+        <div class="nav-heading">PEOPLE & PAY</div>
+        <button class="nav-link" data-page="employees"><span>♙</span> Employees</button>
+        <button class="nav-link" data-page="payroll"><span>R</span> Payroll</button>
+        <button class="nav-link" data-page="payslips"><span>▤</span> Payslips</button>
+        <button class="nav-link" data-page="attendance"><span>◷</span> Attendance & shifts</button>
+        <button class="nav-link" data-page="leave"><span>▣</span> Leave management</button>
+        <div class="nav-heading">BUSINESS</div>
+        <button class="nav-link" data-page="reports"><span>▥</span> Reports</button>
+        <button class="nav-link" data-page="sars"><span>✓</span> SARS & tax</button>
+        <button class="nav-link" data-page="claims"><span>＋</span> Claims & advances</button>
+        <button class="nav-link" data-page="documents"><span>▧</span> Documents</button>
+        <div class="nav-heading">ADMINISTRATION</div>
+        <button class="nav-link" data-page="integrations"><span>⇄</span> DUMA connections</button>
+        <button class="nav-link" data-page="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="secure-note"><span class="secure-dot"></span><span><strong>Security first</strong><small>Production security setup pending</small></span></div><small class="version">DUMA PAYROLL · FOUNDATION</small></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><span class="preview-pill">PREVIEW MODE</span><button class="avatar" aria-label="Demo profile">D</button></div>
+      </header>
+
+      <section class="content">
+        <div class="welcome-row">
+          <div><p class="eyebrow" id="todayLabel">DUMA PAYROLL WORKSPACE</p><h1 id="pageTitle">Good day. Here's your overview.</h1><p class="subhead">A clear view of your people, payroll and business costs.</p></div>
+          <button class="primary-btn" id="runPayroll">＋ Start payroll</button>
+        </div>
+
+        <div class="notice"><span class="notice-icon">i</span><div><strong>Preview workspace</strong><p>Figures and records shown here are sample data. Do not add real employee or banking details until secure accounts and storage are enabled.</p></div><button class="notice-close" aria-label="Dismiss notice" id="dismissNotice">×</button></div>
+
+        <div class="section-head"><div><h2>Payroll snapshot</h2><p>Sample figures for the current period</p></div><span class="period-tag">NOVEMBER 2026</span></div>
+        <div class="stat-grid">
+          <article class="stat-card"><div class="stat-top"><span>Total employees</span><span class="stat-icon">♙</span></div><strong>—</strong><small>Connect your employee records</small></article>
+          <article class="stat-card"><div class="stat-top"><span>Gross payroll</span><span class="stat-icon">R</span></div><strong>—</strong><small>Calculated after payroll setup</small></article>
+          <article class="stat-card"><div class="stat-top"><span>Pending approvals</span><span class="stat-icon">◷</span></div><strong>0</strong><small>No approvals in this preview</small></article>
+          <article class="stat-card"><div class="stat-top"><span>Next pay date</span><span class="stat-icon">▣</span></div><strong>—</strong><small>Set your pay schedule</small></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel quick-panel"><div class="panel-head"><div><h2>Quick actions</h2><p>Common payroll tasks</p></div></div><div class="quick-grid">
+            <button class="quick-action" data-page="employees"><span class="quick-icon">♙</span><strong>Add employee</strong><small>Create a staff profile</small></button>
+            <button class="quick-action" data-page="payroll"><span class="quick-icon">R</span><strong>Prepare payroll</strong><small>Review a pay period</small></button>
+            <button class="quick-action" data-page="leave"><span class="quick-icon">▣</span><strong>Manage leave</strong><small>Requests and balances</small></button>
+            <button class="quick-action" data-page="reports"><span class="quick-icon">▥</span><strong>View reports</strong><small>Business payroll insights</small></button>
+          </div></section>
+          <section class="panel activity-panel"><div class="panel-head"><div><h2>Getting started</h2><p>Your setup checklist</p></div><span class="progress-label">0 of 5</span></div>
+            <div class="setup-list"><div class="setup-item"><span class="check-circle">1</span><span><strong>Set up your company</strong><small>Company details and branches</small></span><span class="setup-status">Next</span></div><div class="setup-item"><span class="check-circle">2</span><span><strong>Configure pay schedules</strong><small>Weekly, fortnightly or monthly</small></span></div><div class="setup-item"><span class="check-circle">3</span><span><strong>Add employee records</strong><small>Secure employee onboarding</small></span></div><div class="setup-item"><span class="check-circle">4</span><span><strong>Review tax settings</strong><small>Use verified current SARS rules</small></span></div><div class="setup-item"><span class="check-circle">5</span><span><strong>Run a test payroll</strong><small>Validate calculations before approval</small></span></div></div>
+          </section>
+        </div>
+        <footer>© 2026 DUMA PAYROLL <span>Built for South African business</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
