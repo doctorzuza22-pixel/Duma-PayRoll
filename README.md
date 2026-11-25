@@ -1,47 +1,80 @@
-# DUMA — Business Operating System
+# DUMA BUSINESS
 
-**One business. One connected workspace.**
+**One platform. Every industry. Every department.**  
+**Built for Africa. Ready for the world.**
 
-DUMA is being developed as a modular business super app for African businesses. The goal is to bring essential operations into one system while keeping company data private and access controlled.
+DUMA BUSINESS is planned as one modular operating platform for businesses, institutions and public organisations. It shares a common identity, organisation, permissions, documents, workflow, reporting and security foundation, with specialised industry editions.
 
-## DUMA modules
+## Master platform modules
 
-- **DUMA MONEY** — income, expenses, cash flow and financial records.
-- **DUMA FLEET** — vehicles, drivers, maintenance and fleet costs.
-- **DUMA PAYROLL** — employees, payroll, payslips, leave and HR.
-- **DUMA BUSINESS** — stock, sales, customers and suppliers.
-- **DUMA FREIGHT** — loads, deliveries and logistics.
-- **DUMA INTELLIGENCE** — consolidated reports and business insights.
+- DUMA Command Centre
+- DUMA AI
+- DUMA Money & Accounting
+- DUMA Payroll & HR
+- DUMA Retail & POS
+- DUMA Stock & Procurement
+- DUMA CRM & Customers
+- DUMA Fleet
+- DUMA Freight & Logistics
+- DUMA Projects & Contracts
+- DUMA Documents
+- DUMA Intelligence & Business Radar
+- DUMA Education
+- DUMA Health administration
+- DUMA Municipal
+- DUMA Agriculture
+- DUMA Hospitality
+- DUMA Assets & Maintenance
+- DUMA Marketplace & Staff Marketplace
+- DUMA Communications & Training Academy
+- DUMA Security & Core Lock
+- DUMA Open API & Integrations
+- DUMA Global
+- DUMA Automation & Voice
+- DUMA Customer & Employee Portals
 
-Shared workspace services will include company profiles, branches, people and roles, documents, notifications, audit history and settings.
+## Industry editions
 
-## Current build status
+Retail/wholesale, professional services, transport/logistics, education, healthcare administration, municipal/government, agriculture, construction/engineering, hospitality/food, manufacturing and non-profit organisations.
 
-- [x] Responsive DUMA super-app command-centre shell
-- [x] Navigation for all six core modules
-- [x] Initial PWA manifest and offline shell
-- [ ] Secure authentication and isolated company workspaces
-- [ ] Shared API/backend and database
-- [ ] Role-based permissions and audit trail
-- [ ] Working module features and shared records
-- [ ] South African payroll rules and independently tested calculations
-- [x] Capacitor Android packaging configuration and GitHub Actions workflow added
-- [ ] First Android APK build verified and released
+## Pricing direction
 
-## Important
+- Starter: R0
+- Growth: R99/month
+- Professional: R299/month
+- Enterprise: custom
+- Planned seven-day Professional trial. No automatic charge without explicit consent.
 
-This repository currently contains a front-end foundation only. Module screens are not yet connected to a production backend. Do not enter real employee, identity, salary, tax, banking, customer or other confidential business information. No live payments, SARS submissions, continuous vehicle tracking, secure cloud backup or production authentication are implemented.
+Pricing, module entitlements, AI allowances and operational costs must be validated before commercial launch.
 
-Sensitive data must be handled by a secured backend with encryption, company-level data isolation, role-based access, audit logs, backups and tested recovery. Tax calculations must use verified, effective-dated South African rules. Financial transfers and regulated payment features require appropriate licensed partners and compliance.
+## Android build
 
-## Run locally
+This repository uses Capacitor 7 and GitHub Actions to build a debug APK.
 
-Open `index.html` in a browser, or serve this directory using a static web server. The first-stage shell uses plain HTML, CSS and JavaScript.
+1. Open the **Actions** tab in GitHub.
+2. Select **Build DUMA Android APK**.
+3. Select **Run workflow** if it is not already running automatically.
+4. Open the completed run and download the `DUMA-Android-APK` artifact.
 
-## Product principles
+The artifact is a debug APK for testing, not a signed Play Store release.
 
-- Original DUMA design and workflows; no copying of Sage or other proprietary code or branding.
-- Mobile-first, clear and practical.
-- Build real working features in stages; never label a planned feature as live.
-- One shared source of truth, with permissions enforced for every company and module.
-- Never store secrets or real customer data in this public repository.
+## Current status and important limitations
+
+The current app is a navigable front-end foundation and Android packaging project. The module catalogue and industry editions are represented in the app, but the modules are not yet connected to production services.
+
+Not implemented or verified yet: production authentication, tenant-isolated cloud database, server-enforced role permissions, payroll calculations, SARS submissions, live payment processing, production DUMA AI, municipal integrations, medical/clinical records, continuous GPS, cloud backup, marketplace transactions and external API integrations.
+
+Do not enter real employee, identity, salary, banking, medical, tax, customer or other confidential data into this preview.
+
+## Security principles
+
+DUMA CORE LOCK is a planned layered security architecture, not a guarantee against every attack. It will require MFA, least privilege, server-side authorisation, tenant isolation, encryption, protected branches, reviewed releases, dependency scanning, audit logs, monitored integrations, encrypted backups, tested restoration and independent security testing. No software can promise zero cyber risk.
+
+## Development principles
+
+- Build one shared platform, not disconnected duplicate apps.
+- Keep industry editions configurable and role-aware.
+- Enforce access permissions on the server, never only in the interface.
+- Keep sensitive actions behind approval and confirmation.
+- Mark planned capabilities honestly until implemented and tested.
+- Do not store secrets or production data in this public repository.
