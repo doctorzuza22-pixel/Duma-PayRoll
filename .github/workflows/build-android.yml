@@ -10,6 +10,7 @@ on:
       - 'app.js'
       - 'manifest.webmanifest'
       - 'sw.js'
+      - 'icon.svg'
       - 'package.json'
       - 'capacitor.config.json'
       - '.github/workflows/build-android.yml'
